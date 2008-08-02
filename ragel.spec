@@ -15,10 +15,14 @@ Patch0:         ragel-Makefile-install.patch
 
 %description
 Ragel compiles finite state machines from regular languages into executable C,
-C++, Objective-C, or D code. Ragel state machines can not only recognize byte
-sequences as regular expression machines do, but can also execute code at
-arbitrary points in the recognition of a regular language. Code embedding is
-done using inline operators that do not disrupt the regular language syntax.
+C++, Objective-C, D, Java or Ruby code.
+
+Ragel state machines can not only recognize byte sequences as regular
+expression machines do, but can also execute code at arbitrary points in the
+recognition of a regular language.
+
+Code embedding is done using inline operators that do not disrupt the regular
+language syntax.
 
 %prep
 %setup -q
