@@ -1,11 +1,11 @@
-Name:           ragel   
-Version:        6.2
+Name:           ragel
+Version:        6.3
 Release:        %mkrel 1
 Summary:        Finite state machine compiler
 
 Group:          Development/Other
 License:        GPLv2+
-URL:            http://www.cs.queensu.ca/~thurston/ragel/ 
+URL:            http://www.cs.queensu.ca/~thurston/ragel/
 Source0:        http://www.cs.queensu.ca/~thurston/ragel/%{name}-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -30,7 +30,7 @@ language syntax.
 
 %build
 %configure2_5x
-%make 
+%make
 pushd doc
 %make
 popd
