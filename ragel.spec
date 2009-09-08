@@ -1,6 +1,6 @@
 Name:           ragel
 Version:        6.3
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Finite state machine compiler
 
 Group:          Development/Other
