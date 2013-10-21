@@ -1,17 +1,14 @@
 Name:           ragel
-Version:        6.3
-Release:        %mkrel 2
+Version:        6.8
+Release:        1
 Summary:        Finite state machine compiler
 
 Group:          Development/Other
 License:        GPLv2+
 URL:            http://www.cs.queensu.ca/~thurston/ragel/
 Source0:        http://www.cs.queensu.ca/~thurston/ragel/%{name}-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:  transfig, tetex-latex
-
-Patch0:         ragel-Makefile-install.patch
+BuildRequires:  transfig
 
 %description
 Ragel compiles finite state machines from regular languages into executable C,
@@ -26,7 +23,6 @@ language syntax.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure2_5x
@@ -37,7 +33,6 @@ popd
 
 
 %install
-rm -rf %{buildroot}
 %makeinstall
 chmod a-x examples/*
 pushd doc
@@ -45,19 +40,12 @@ pushd doc
 popd
 
 %clean
-rm -rf %{buildroot}
-
 
 %files
-%defattr(-,root,root,-)
 %doc COPYING ragel.vim
 %doc examples
 %doc doc/ragel-guide.pdf
-%{_bindir}/rlgen-ruby
-%{_bindir}/rlgen-java
-%{_bindir}/rlgen-dot
-%{_bindir}/rlgen-cd
-%{_bindir}/rlgen-csharp
 %{_bindir}/ragel
 %{_mandir}/*/*
+
 
