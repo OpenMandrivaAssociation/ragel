@@ -1,6 +1,6 @@
 Name:           ragel
 Version:        6.8
-Release:        4
+Release:        5
 Summary:        Finite state machine compiler
 
 Group:          Development/Other
