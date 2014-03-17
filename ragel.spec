@@ -1,13 +1,11 @@
+Summary:        Finite state machine compiler
 Name:           ragel
 Version:        6.8
 Release:        5
-Summary:        Finite state machine compiler
-
 Group:          Development/Other
 License:        GPLv2+
-URL:            http://www.cs.queensu.ca/~thurston/ragel/
+Url:            http://www.cs.queensu.ca/~thurston/ragel/
 Source0:        http://www.cs.queensu.ca/~thurston/ragel/%{name}-%{version}.tar.gz
-
 BuildRequires:  transfig
 
 %description
@@ -31,7 +29,6 @@ pushd doc
 %make
 popd
 
-
 %install
 %makeinstall
 chmod a-x examples/*
@@ -39,13 +36,10 @@ pushd doc
 %makeinstall
 popd
 
-%clean
-
 %files
 %doc COPYING ragel.vim
 %doc examples
 %doc doc/ragel-guide.pdf
 %{_bindir}/ragel
 %{_mandir}/*/*
-
 
