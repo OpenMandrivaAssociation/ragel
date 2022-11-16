@@ -7,6 +7,7 @@ License:        GPLv2+
 Url:            http://www.cs.queensu.ca/~thurston/ragel/
 Source0:        http://www.cs.queensu.ca/~thurston/ragel/%{name}-%{version}.tar.gz
 
+BuildRequires:  colm
 BuildRequires:  colm-devel
 
 %description
