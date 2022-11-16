@@ -7,6 +7,8 @@ License:        GPLv2+
 Url:            http://www.cs.queensu.ca/~thurston/ragel/
 Source0:        http://www.cs.queensu.ca/~thurston/ragel/%{name}-%{version}.tar.gz
 
+BuildRequires:  colm-devel
+
 %description
 Ragel compiles finite state machines from regular languages into executable C,
 C++, Objective-C, D, Java or Ruby code.
