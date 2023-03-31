@@ -1,7 +1,7 @@
 Summary:        Finite state machine compiler
 Name:           ragel
 Version:        6.10
-Release:        2
+Release:        3
 Group:          Development/Other
 License:        GPLv2+
 Url:            http://www.cs.queensu.ca/~thurston/ragel/
