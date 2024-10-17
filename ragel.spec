@@ -4,7 +4,7 @@ Version:        6.10
 Release:        3
 Group:          Development/Other
 License:        GPLv2+
-Url:            http://www.cs.queensu.ca/~thurston/ragel/
+Url:            https://www.cs.queensu.ca/~thurston/ragel/
 Source0:        http://www.cs.queensu.ca/~thurston/ragel/%{name}-%{version}.tar.gz
 
 %description
